@@ -1,0 +1,36 @@
+class stud:
+    
+    def __init__(self):
+        
+        self.list=[]
+        
+        
+    def push(self):
+            print("Enter the no.")
+                
+            self.list.append(input())
+            print(self.list)
+            self.top+=1
+    def display(self):
+        print(self.list)
+s=stud()
+m=1
+while(m):
+            
+            s.top=-1
+            print("Enter:")
+            print("1.Push")
+            print("2.POP")
+            print("3.Display")
+            print("0.Exit")
+            n=int(input())
+            m=n
+            if(n==0):
+                exit()
+            if(n==1):
+                s.push()
+            if(n==2):
+               del s.list[0]
+            if(n==3):
+                s.display()                
+
